@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title> <!--titulo da pagina-->
+    <link rel="stylesheet" href="estilo.css"> <!--arquivo de refêrencia-->
+</head>
+<style>
+     * {
+          padding: 0;
+          margin: 0;
+     }
+
+     body {
+          background-image: url("img/background.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100vh;
+     }
+
+
+</style>
+<body>
+     <div class="container">
+          <nav> <!--navegação de paginas-->
+               <ul>
+                    <li>
+                         <a href="index.html">Inicio</a> <!-- Pagina Inicial-->
+                    </li>
+                    <li>
+                         <a href="about me.html">Sobre mim</a> <!--Sobre mim-->
+                    </li>
+                    <li>
+                         <a href="formation.html">Formação</a> <!--formação/conhcimentos-->
+                    </li>
+                    <li>
+                         <a href="projects.html">Projetos</a> <!--projetos -->
+                    </li>
+
+               </ul>
+          </nav>
+
+      </div>
+      <header>
+          <img src="./img/eu2.jpeg" alt="Rogerio" title="Rogerio"/>  <!-- minha foto -->
+          <h1> Rogerio CJ</h1>
+      </header>
+      <div class="container4">
+          <form action="https://formsubmit.co/rogercj.ti@gmail.com" method="POST"> <!-- formulario de contato -->
+               <label for="email">E-mail</label>
+               <input type="email" name="email" id="email" required>
+               <label for="message">Mensagem</label>
+               <input type="text" name="message" id="message" required>
+               <input type="hidden" name="_next" value="https://rcpage.netlify.app/thanks.html"> <!-- link para agradecimento da mensagem enviada-->
+               <button type="submit">Enviar</button> <!-- Enviar Mensagem -->
+          </form>
+      </div>
+
+    </body>
+</html>
